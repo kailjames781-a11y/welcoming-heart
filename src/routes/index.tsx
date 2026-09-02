@@ -23,7 +23,7 @@ function Index() {
     <main className="min-h-dvh bg-background text-foreground">
       <GreetingHero />
       <footer className="pb-4 text-center text-xs text-muted-foreground">
-        Powered by Elite AI.
+        Powered by Elite AI. قريبا
       </footer>
     </main>
   );
