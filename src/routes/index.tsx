@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import { GreetingHero } from "@/components/GreetingHero";
+import { LoginForm } from "@/components/LoginForm";
 
-const TITLE = "أهلاً — واجهة ترحيب";
+const TITLE = "تسجيل الدخول — واجهة آمنة";
 const DESCRIPTION =
-  "صفحة ترحيب عربية بتصميم داكن أنيق، متجاوبة بالكامل ومهيأة لتجربة استخدام سلسة على جميع الأجهزة.";
+  "صفحة تسجيل دخول عربية بتصميم داكن أنيق، متجاوبة بالكامل وآمنة.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,10 +21,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="min-h-dvh bg-background text-foreground">
-      <GreetingHero />
-      <footer className="pb-4 text-center text-xs text-muted-foreground">
-        Powered by Elite AI. قريبا
-      </footer>
+      <LoginForm />
     </main>
   );
 }
