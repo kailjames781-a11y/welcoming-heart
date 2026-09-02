@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { GreetingHero } from "@/components/GreetingHero";
 
-const TITLE = "أهلاً — واجهة ترحيب عربية أنيقة";
+const TITLE = "أهلاً — واجهة ترحيب";
 const DESCRIPTION =
   "صفحة ترحيب عربية بتصميم داكن أنيق، متجاوبة بالكامل ومهيأة لتجربة استخدام سلسة على جميع الأجهزة.";
 
