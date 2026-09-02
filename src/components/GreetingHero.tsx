@@ -15,7 +15,7 @@ export function GreetingHero() {
 
       <div className="relative z-10 mx-auto flex max-w-2xl flex-col items-center gap-6">
         <span className="rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-medium tracking-widest text-primary">
-          مرحباً بك
+          أهلاً وسهلاً
         </span>
 
         <h1
