@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
 /* ------------------------------------------------------------------ */
 /*  Scroll-reveal hook                                                  */
 /* ------------------------------------------------------------------ */
-function useReveal(ref: React.RefObject<HTMLElement | null>) {
+function useReveal(ref: RefObject<HTMLElement | null>) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
@@ -36,7 +36,6 @@ function useReveal(ref: React.RefObject<HTMLElement | null>) {
       },
       { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
     );
-function useReveal(ref: RefObject<HTMLElement | null>) {
     observer.observe(el);
     return () => observer.disconnect();
   }, [ref]);
@@ -51,12 +50,12 @@ function Section({
   id,
   ref,
 }: {
-  children: React.ReactNode;
   children: ReactNode;
+  className?: string;
   id?: string;
-  ref?: React.RefObject<HTMLElement | null>;
+  ref?: RefObject<HTMLElement | null>;
 }) {
-  ref?: RefObject<HTMLElement | null;
+  return (
     <section
       id={id}
       ref={ref}
