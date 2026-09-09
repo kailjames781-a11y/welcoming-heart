@@ -2,32 +2,24 @@ import { cn } from "@/lib/utils";
 
 /**
  * شعار "البيت الدافئ"
- * يعرض ملف اللوجو الرسمي (public/logo.svg) مع الاسم بجانبه.
+ * يعرض الملف الرسمي للوجو (public/logo.jpg) بدون نص بجانبه.
  */
 export function Logo({
   className,
   imgClassName,
-  showName = true,
 }: {
   className?: string;
   imgClassName?: string;
-  showName?: boolean;
 }) {
   return (
-    <span className={cn("flex items-center gap-2", className)}>
+    <span className={cn("flex items-center", className)}>
       <img
-        src="/logo.svg"
+        src="/logo.jpg"
         alt="شعار البيت الدافئ"
-        aria-hidden={showName ? true : undefined}
-        className={cn("h-9 w-9 shrink-0", imgClassName)}
+        className={cn("h-10 w-10 shrink-0 object-contain", imgClassName)}
         loading="eager"
         decoding="async"
       />
-      {showName ? (
-        <span className="text-lg font-bold tracking-tight text-foreground">
-          البيت الدافئ
-        </span>
-      ) : null}
     </span>
   );
 }
