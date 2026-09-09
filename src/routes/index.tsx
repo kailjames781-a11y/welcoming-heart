@@ -98,11 +98,8 @@ function Navbar() {
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 sm:px-12 lg:px-20">
         {/* Logo */}
-        <a href="#hero" className="flex items-center gap-2 text-lg font-bold tracking-tight text-foreground">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-sm font-bold text-primary-foreground">
-            ب
-          </span>
-          البيت الدافئ
+        <a href="#hero" aria-label="البيت الدافئ - الرئيسية" className="inline-flex">
+          <Logo />
         </a>
 
         {/* Desktop links */}
