@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * شعار "البيت الدافئ"
- * يعرض شعاراً مستقلاً بصيغة SVG.
+ * يعرض صورة شعار جديدة من public/logo.jpg.
  */
 export function Logo({
   className,
@@ -14,7 +14,7 @@ export function Logo({
   return (
     <span className={cn("flex items-center", className)}>
       <img
-        src="/welcoming-heart-logo.svg"
+        src="/logo.jpg"
         alt="شعار البيت الدافئ"
         className={cn("h-10 w-10 shrink-0 object-contain", imgClassName)}
         loading="eager"
