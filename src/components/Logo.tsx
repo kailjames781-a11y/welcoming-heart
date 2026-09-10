@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * شعار "البيت الدافئ"
- * يعرض الملف الرسمي للوجو (public/logo.jpg) بدون نص بجانبه.
+ * يعرض شعاراً مستقلاً بصيغة SVG.
  */
 export function Logo({
   className,
@@ -14,7 +14,7 @@ export function Logo({
   return (
     <span className={cn("flex items-center", className)}>
       <img
-        src="/logo.jpg"
+        src="/welcoming-heart-logo.svg"
         alt="شعار البيت الدافئ"
         className={cn("h-10 w-10 shrink-0 object-contain", imgClassName)}
         loading="eager"
